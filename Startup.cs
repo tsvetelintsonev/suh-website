@@ -36,6 +36,7 @@ namespace Website
                 app.UseExceptionHandler("/error");
             }
 
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseMvc();
         }

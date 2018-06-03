@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 
 namespace Website
 {
@@ -38,6 +40,11 @@ namespace Website
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseFileServer(new FileServerOptions {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "ui/vue-app/dist")),
+                RequestPath = ""
+            });
             app.UseMvc();
         }
     }

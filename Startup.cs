@@ -42,7 +42,7 @@ namespace Website
             app.UseStaticFiles();
             app.UseFileServer(new FileServerOptions {
                 FileProvider = new PhysicalFileProvider(
-                    Path.Combine(Directory.GetCurrentDirectory(), "ui/vue-app/dist")),
+                    Path.Combine(Directory.GetCurrentDirectory(), "ui/angular/dist")),
                 RequestPath = ""
             });
             app.UseMvc();

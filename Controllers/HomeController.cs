@@ -21,7 +21,7 @@ namespace Website.Controllers
 
         public IActionResult Index()
         {
-            return File(Path.Combine(_hostingEnvironment.ContentRootPath, "/ui/vue-app/dist/index.html"), "text/html");
+            return File(Path.Combine(_hostingEnvironment.ContentRootPath, "/ui/angular/dist/index.html"), "text/html");
         }
 
         [Route("error")]

@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family : "Archia";
+    font-weight : 400;
+    src         : url("/../fonts/Archia-Regular.woff2") format('woff2'),
+                  url("/../fonts/Archia-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family : "Archia";
+    font-weight : 600;
+    src         : url("/../fonts/Archia-Bold.woff2") format('woff2'),
+                  url("/../fonts/Archia-Bold.woff") format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight : 400; }
+p { color : rgba($colorShade, 0.72); }
+strong { font-weight : 600; }
+
+.text-regular { font-weight: 400; }
+.text-bold    { font-weight: 600; }
+
+section { margin-bottom: 12vmin; }
+
+.border-thick {
+    width      : 100%;
+    height     : 3px;
+    background : $colorShade;
+}
+
+.border-thin {
+    width      : 100%;
+    height     : 1px;
+    background : $colorShade;
+}
+
+.border-gray {
+    width      : 100%;
+    height     : 1px;
+    background : $colorGrey-20;
+}
+
+section:first-of-type { margin-top: initial; }

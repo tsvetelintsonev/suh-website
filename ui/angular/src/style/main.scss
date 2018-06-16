@@ -1,16 +1,15 @@
-
 @font-face {
-    font-family : "Archia";
+    font-family : 'Archia';
     font-weight : 400;
-    src         : url("/../fonts/Archia-Regular.woff2") format('woff2'),
-                  url("/../fonts/Archia-Regular.woff") format('woff');
+    src         : url('/assets/fonts/Archia-Regular.woff2') format('woff2'),
+                  url('/assets/fonts/Archia-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family : "Archia";
+    font-family : 'Archia';
     font-weight : 600;
-    src         : url("/../fonts/Archia-Bold.woff2") format('woff2'),
-                  url("/../fonts/Archia-Bold.woff") format('woff');
+    src         : url('/assets/fonts/Archia-Bold.woff2') format('woff2'),
+                  url('/assets/fonts/Archia-Bold.woff') format('woff');
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight : 400; }
@@ -40,4 +39,6 @@ section { margin-bottom: 12vmin; }
     background : $colorGrey-20;
 }
 
-section:first-of-type { margin-top: initial; }
+.header-links {
+  z-index: 1;
+}

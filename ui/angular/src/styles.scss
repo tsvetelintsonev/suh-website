@@ -1,3 +1,34 @@
-@import "style/vendor/fictoan/scss/fictoan";
+//  Normalize first ===========================================================
+@import "style/fictoan/vendor/normalize";
+
+//  Variables next ============================================================
+@import "style/fictoan/base/ff-config";
 @import "style/variables";
+@import "style/fictoan/theme/ff-variables";
+
+//  The meat of the matter ====================================================
+//  Opinionated baseline rules
+@import "style/fictoan/base/ff-reset";
+
+//  Basics
+@import "style/fictoan/base/ff-layout";
+@import "style/fictoan/base/ff-utilities";
+@import "style/fictoan/base/ff-responsive";
+
+@import "style/fictoan/design/ff-colours";
+@import "style/fictoan/design/ff-typography";
+
+//The FICTOAN buffet menu
+@import "style/fictoan/elements/ff-inputs";
+@import "style/fictoan/elements/ff-buttons";
+
+@import "style/fictoan/components/ff-header";
+@import "style/fictoan/components/ff-sidebar";
+@import "style/fictoan/components/ff-card";
+@import "style/fictoan/components/ff-table";
+@import "style/fictoan/components/ff-tabs";
+@import "style/fictoan/components/ff-modal";
+
+@import "style/fictoan/design/ff-code-light";
+
 @import "style/main";
